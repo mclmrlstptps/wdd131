@@ -1,0 +1,43 @@
+/* Header styling */
+header {
+    background-color: #4c4b63;
+    color: #c3c3c3;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main content styling */
+main {
+    background-color: white;
+    color: #4c4b63;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Paragraph styling */
+p {
+    border: 1px solid #4c4b63;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
