@@ -1,0 +1,102 @@
+body {
+    background-color: #c3c3c3;
+}
+
+header {
+    background-color: #4c4b63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Sedan SC", serif;
+    color: #aba8b2;
+}
+
+header .menu-toggle {
+    color: #aba8b2;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header nav {
+    display: none;
+}
+
+header nav.show {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #aba8b2;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+}
+
+nav ul li {
+margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aba8b2;
+}
+
+nav ul li a:hover {
+    color: #4c4b63;
+    background-color: #aba8b2;
+}
+
+h2 {
+    font-family: "Sedan SC", serif;
+    color: #4c4b63;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+    gap: 20px;
+}
+
+.grid-container figure{
+    margin-bottom: 20px;
+}
+
+.grid-container img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width:600px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #4c4b63;
+
+}
+
+footer {
+    background-color: #4c4b63;
+    color: #aba8b2;
+    font-family: "Sedan SC", serif;
+    text-align: center;
+}

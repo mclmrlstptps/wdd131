@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Costa Rica</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/costa_rica.webp">
+                <source media="(max-width: 1200px)" srcset="images/costa_rica.webp">
+                <source media="(min-width: 1201px)" srcset="images/costa_rica.webp">
+                <img src="images/costa_rica.webp" alt="Hero Image">
+            </picture>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-container">
+                <div class="weather-details">
+                    <span class="weather-icon">⛅</span>
+                    <p>Temperature: <span id="temperature">20</span>&deg;C</p>
+                    <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+                    <p>Wind Chill: <span id="wind-chill"></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <h2>About This Place</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu eleifend bibendum, velit sem tincidunt mauris, vel tincidunt leo mauris vel nulla. Sed nec augue non est viverra ultricies. Sed vel mauris at velit bibendum hendrerit. Donec commodo risus eu neque bibendum, vel tristique eros laoreet.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    background-color: #edd7df;
+    font-family: "Roboto", sans-serif;
+    color: #4c4b63;
+}
+
+header {
+    background-color: #3c123d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Sedan SC", serif;
+    color: #aba8b2;
+}
+
+header .menu-toggle {
+    color: #aba8b2;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header nav {
+    display: none;
+}
+
+header nav.show {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #aba8b2;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aba8b2;
+}
+
+nav ul li a:hover {
+    color: #4c4b63;
+    background-color: #aba8b2;
+}
+
+h2 {
+    font-family: "Sedan SC", serif;
+    color: #4c4b63;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+}
+
+.grid-container .temple-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.grid-container .temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-container .temple-card h3 {
+    margin: 16px 0 8px;
+    font-size: 20px;
+}
+
+.grid-container .temple-card p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: #4c4b63;
+    color: #aba8b2;
+    font-family: "Sedan SC", serif;
+    text-align: center;
+    padding: 10px;
+}

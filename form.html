@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <h1>Product Review</h1>
+    <div class="container">
+        <form id="productForm" method="get" action="review.html">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required />
+                    <label for="star5" title="5 star">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4" required />
+                    <label for="star4" title="4 stars">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3" required />
+                    <label for="star3" title="3 stars">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2" required />
+                    <label for="star2" title="2 stars">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1" required />
+                    <label for="star1" title="1 stars">&#9733;</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+            <div class="form-group">
+                <label>Which features did you find useful in the product?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="Durability" value="yes"> Durability</label>
+                    <label><input type="checkbox" name="Ease of Use" value="yes"> Ease of Use</label>
+                    <label><input type="checkbox" name="Performance" value="yes"> Performance</label>
+                    <label><input type="checkbox" name="Design" value="yes"> Design</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div class="button-container">
+                <button type="submit">Post Review</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Micaela Morales-Tapia, Kentucky, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
