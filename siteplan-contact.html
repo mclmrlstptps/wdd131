@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js" defer></script>
+    <title>Ballroom-contact</title>
+    <link rel="stylesheet" href="styles/siteplan-contact.css">
+    <script src="scripts/siteplan-contact.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="siteplan.html">Home</a></li>
-                <li><a href="siteplan2.html">Styles</a></li>
-                <li><a href="siteplan-contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Contact Us</h1>
-    </header>
-    <main>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required
+    <h1>Learn More</h1>
+    <div class="container">
+        <form id="productForm" method="get" action="review.html">
+            <h2>Please choose the dances you want to learn more about</h2>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <h2>Latin</h2>
+                    <label><input type="checkbox" name="Cha Cha" value="yes"> Cha Cha</label>
+                    <label><input type="checkbox" name="Jive" value="yes"> Jive</label>
+                    <label><input type="checkbox" name="Paso Doble" value="yes"> Paso Doble</label>
+                    <label><input type="checkbox" name="Rumba" value="yes"> Rumba</label>
+                    <label><input type="checkbox" name="Samba" value="yes"> Samba</label>
+                    <h2>Ballroom</h2>
+                    <label><input type="checkbox" name="Foxtrot" value="yes"> Foxtrot</label>
+                    <label><input type="checkbox" name="Quickstep" value="yes"> Quickstep</label>
+                    <label><input type="checkbox" name="Tango" value="yes"> Tango</label>
+                    <label><input type="checkbox" name="Viennese Waltz" value="yes"> Viennese Waltz</label>
+                    <label><input type="checkbox" name="Waltz" value="yes"> Waltz</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+            <div class="button-container">
+                <button type="submit">Learn More</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Micaela Morales-Tapia, Kentucky, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
